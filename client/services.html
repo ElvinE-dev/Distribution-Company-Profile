@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+
+        @theme{
+            --color-primary: #3d579f;
+            --color-dark-primary: #0d1630;
+        }
+        body{
+            @apply w-screen h-fit text-white overflow-x-hidden;
+        }
+        button.primary-border{
+            @apply px-4 py-2 border border-primary rounded-md transition;
+        }
+        button.primary{
+            @apply px-4 py-2 bg-primary border-primary border rounded-md transition;
+        }
+
+        button.primary:hover{
+            @apply bg-transparent
+        }
+        button.primary-border:hover{
+            @apply bg-primary
+        }
+
+        .glass-card {
+          background: #3d579f18;
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          border-radius: 20px;
+          border: 1px solid rgba(255, 255, 255, 0.3);
+          box-shadow: 
+            0 8px 32px rgba(0, 0, 0, 0.1),
+            inset 0 1px 0 rgba(255, 255, 255, 0.5),
+            inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+            ;
+          position: relative;
+          overflow: hidden;
+        }
+
+
+        section{
+            @apply bg-dark-primary w-full h-screen relative
+        }
+
+    </style>
+</head>
+<body>
+
+  <nav class="w-full flex justify-between align-center fixed top-0 left-0 px-8 py-6 z-99">
+        <div id="navBox" class="w-full transition-all duration-300 h-20 px-8 py-6 flex flex-col md:flex-row align-center justify-between glass-card text-shadow-md text-shadow-black/30 text-xl">
+            <div class="flex justify-between">
+                <label for="" class="font-bold">LOGO</label>
+                <div id="navMenuBtn" class="md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
+
+            </div>
+            <ul class="hidden md:flex gap-8 font-bold">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="md:hidden flex flex-col gap-8 font-bold mt-10">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="flex items-center justify-between p-16">
+      <div class="w-4/10 flex flex-col gap-12">
+          <h2 class="text-6xl font-bold">
+              TENTANG KAMI
+          </h2>
+          <p class="text-4xl">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, laboriosam ducimus ipsam ullam voluptas, magni unde accusantium eaque ab odio facere obcaecati illo impedit ipsum?
+          </p>
+
+          <div class="flex gap-4">
+              <button class="primary">Layanan Pengiriman</button>
+              <button class="primary-border">Kontak Kami</button>
+          </div>
+      </div>
+
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
