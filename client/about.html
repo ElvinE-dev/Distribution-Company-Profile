@@ -49,7 +49,7 @@
         }
 
         section{
-            @apply bg-dark-primary/90 w-full h-screen relative
+            @apply bg-dark-primary/90 w-full min-h-screen relative
         }
 
         section:not(.hero), footer{
@@ -91,11 +91,11 @@
         <span class="w-full h-full bg-gradient-to-r from-dark-primary to-transparent absolute top-0 left-0 z-1"></span>
         <img class="w-full h-full object-cover object-center" src="image/img3.jpeg" alt="">
       </div>
-      <div class="w-5/10 flex flex-col gap-12 z-1">
-          <h2 class="text-6xl font-bold text-yellow-600">
+      <div class="w-full xl:w-5/10 flex flex-col gap-12 z-1">
+          <h2 class="text-4xl xl:text-6xl font-bold text-yellow-600">
               TENTANG KAMI
           </h2>
-          <p class="text-4xl">
+          <p class="text-md xl:text-4xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, laboriosam ducimus ipsam ullam voluptas, magni unde accusantium eaque ab odio facere obcaecati illo impedit ipsum?
           </p>
 
@@ -107,16 +107,16 @@
 
     </section>
 
-    <section class="flex p-16 gap-20">
-      <div class="w-3/10 flex flex-col gap-4 items-end translate-y-[30%]">
-        <span class="text-6xl w-fit font-bold text-yellow-600">VISI</span>
+    <section class="flex-col xl:flex-row flex p-8 xl:p-16 gap-8 xl:gap-20">
+      <div class="w-full xl:w-3/10 flex flex-col gap-4 items-end xl:translate-y-[30%]">
+        <span class="text-3xl xl:text-6xl w-fit font-bold text-yellow-600">VISI</span>
         <p class="text-justify"><span style="font-family: 'Space Grotesk' ,serif; font-weight: 700;" class="text-5xl text-yellow-600">"</span>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempore laborum ad corporis totam libero reiciendis cumque quia iure, fugit sequi voluptate. Aperiam delectus incidunt consectetur! Nobis asperiores voluptatibus, odio beatae necessitatibus expedita iusto reiciendis quam quas id assumenda neque aut aperiam, minima repellendus possimus accusamus sed commodi sint fugiat suscipit delectus facilis aspernatur dignissimos! Corrupti reprehenderit possimus sed eligendi impedit id recusandae est ab et odit. Rem qui nam, optio aut molestiae, asperiores velit reprehenderit animi repudiandae hic maxime!
+          <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempore laborum ad corporis totam libero reiciendis cumque quia iure, fugit sequi voluptate. Aperiam delectus incidunt consectetur! Nobis asperiores voluptatibus, odio beatae necessitatibus expedita iusto reiciendis quam quas id assumenda neque aut aperiam, minima repellendus possimus accusamus sed commodi sint fugiat suscipit delectus facilis aspernatur dignissimos! Corrupti reprehenderit possimus sed eligendi impedit id recusandae est ab et odit. Rem qui nam, optio aut molestiae, asperiores velit reprehenderit animi repudiandae hic maxime!</span>
           <span style="font-family: 'Space Grotesk' ,serif; font-weight: 700; vertical-align: -0.7em;" class="text-5xl text-yellow-600 leading-none">"</span></p>
       </div>
 
-      <div class="w-3/10 flex flex-col gap-4 items-start translate-y-[0%]">
-        <span class="text-6xl w-fit font-bold text-yellow-600">MISI</span>
+      <div class="w-full xl:w-3/10 flex flex-col gap-4 items-start xl:translate-y-[0%]">
+        <span class="text-3xl xl:text-6xl w-fit font-bold text-yellow-600">MISI</span>
         <p class="text-justify">
           <span style="font-family: 'Space Grotesk' ,serif; font-weight: 700;" class="text-5xl text-yellow-600">"</span>
           <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempore laborum ad corporis totam libero reiciendis cumque quia iure, fugit sequi voluptate. Aperiam delectus incidunt consectetur! Nobis asperiores voluptatibus, odio beatae necessitatibus expedita iusto reiciendis quam quas id assumenda neque aut aperiam, minima repellendus possimus accusamus sed commodi sint fugiat suscipit delectus facilis aspernatur dignissimos! Corrupti reprehenderit possimus sed eligendi impedit id recusandae est ab et odit. Rem qui nam, optio aut molestiae, asperiores velit reprehenderit animi repudiandae hic maxime!</span>
@@ -124,42 +124,42 @@
       </div>
 
       <div>
-        <img class="grayscale h-full absolute rotate-12 top-0 -translate-x-20 -translate-y-10" src="image/lifter.png" alt="">
+        <img class="hidden xl:block grayscale h-full absolute rotate-12 top-0 -translate-x-20 -translate-y-10" src="image/lifter.png" alt="">
       </div>
     </section>
 
-    <section class="p-16 flex gap-12 items-center justify-center">
-      <div class="w-4/10">
+    <section class="p-4 xl:p-16 flex flex-col xl:flex-row gap-12 xl:items-center xl:justify-center h-fit">
+      <div class="w-4/10 hidden xl:block">
         <img src="image/about1.png" alt="">
       </div>
-      <div class="w-6/10 flex flex-col gap-12">
-          <h2 class="text-6xl font-bold text-yellow-600">
+      <div class="w-full xl:w-6/10 flex flex-col gap-12">
+          <h2 class="text-3xl xl:text-6xl font-bold text-center xl:text-start text-yellow-600">
               KEUNGGULAN <br> KAMI
           </h2>
           
-          <p class="text-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, eaque! Earum odit aperiam doloremque veniam, non dolorum? Dignissimos, reiciendis deleniti!</p>
+          <p class="text-md xl:text-2xl text-center xl:text-start">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, eaque! Earum odit aperiam doloremque veniam, non dolorum? Dignissimos, reiciendis deleniti!</p>
 
-          <div class="w-full flex gap-12 flex-wrap">
-            <div class="w-3/10 aspect-video bg-primary rounded-lg p-4 shrink-0">
+          <div class="w-full flex justify-center xl:justify-start gap-4 xl:gap-12 flex-wrap">
+            <div class="w-5/12 lg:w-3/10 aspect-video bg-primary rounded-lg p-4 shrink-0">
               <span>
-                <div class=" flex items-center py-2 gap-2">
+                <div class="flex-col xl:flex-row flex items-center py-2 gap-2">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                   </svg>
-                  <h5 class="font-bold text-xl">Efisiensi Waktu</h5>
+                  <h5 class="font-bold text-md xl:text-xl text-center xl:text-start">Efisiensi Waktu</h5>
                 </div>
                 <p>
                   Kami menyelesaikan setiap pekerjaan tepat waktu tanpa mengorbankan kualitas.
                 </p>
               </span>
             </div>
-            <div class="w-3/10 aspect-video bg-primary rounded-lg p-4 shrink-0">
+            <div class="w-5/12 lg:w-3/10 aspect-video bg-primary rounded-lg p-4 shrink-0">
               <span>
-                <div class=" flex items-center py-2 gap-2">
+                <div class="flex-col xl:flex-row flex items-center py-2 gap-2">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
                   </svg>
-                  <h5 class="font-bold text-xl">Berpengalaman</h5>
+                  <h5 class="font-bold text-md xl:text-xl text-center xl:text-start">Berpengalaman</h5>
                 </div>
                 <p>
                   Didukung oleh tenaga profesional yang terlatih dan berdedikasi di bidangnya.
@@ -167,26 +167,26 @@
               </span>
             </div>
             
-            <div class="w-3/10 aspect-video bg-primary rounded-lg p-4 shrink-0">
+            <div class="w-5/12 lg:w-3/10 aspect-video bg-primary rounded-lg p-4 shrink-0">
               <span>
-                <div class=" flex items-center py-2 gap-2">
+                <div class="flex-col xl:flex-row flex items-center py-2 gap-2">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 14.25l6-6m4.5-3.493V21.75l-3.75-1.5-3.75 1.5-3.75-1.5-3.75 1.5V4.757c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0c1.1.128 1.907 1.077 1.907 2.185Z" />
                   </svg>
-                  <h5 class="font-bold text-xl">Harga Terjangkau</h5>
+                  <h5 class="font-bold text-md xl:text-xl text-center xl:text-start">Harga Terjangkau</h5>
                 </div>
                 <p>
                   Layanan berkualitas tinggi dengan harga yang kompetitif dan transparan.
                 </p>
               </span>
             </div>
-            <div class="w-3/10 aspect-video bg-primary rounded-lg p-4 shrink-0">
+            <div class="w-5/12 lg:w-3/10 aspect-video bg-primary rounded-lg p-4 shrink-0">
               <span>
-                <div class=" flex items-center py-2 gap-2">
+                <div class="flex-col xl:flex-row flex items-center py-2 gap-2">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
                   </svg>
-                  <h5 class="font-bold text-xl">Terpercaya</h5>
+                  <h5 class="font-bold text-md xl:text-xl text-center xl:text-start">Terpercaya</h5>
                 </div>
                 <p>
                   Kepuasan Anda adalah prioritas utama kami dalam setiap langkah pelayanan.
@@ -268,10 +268,10 @@
                 <h5>Navigasi</h5>
 
                 <div class="flex flex-col gap-4">
-                    <a href="#">Home</a>
-                    <a href="#">Home</a>
-                    <a href="#">Home</a>
-                    <a href="#">Home</a>
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
                 </div>
                 
             </div>
@@ -281,7 +281,7 @@
 
                 <div class="flex flex-col gap-4">
                     <a href="#">Pengiriman Darat</a>
-                    <a href="#">Pengiriman LauT</a>
+                    <a href="#">Pengiriman Laut</a>
                     <a href="#">Warehousing</a>
                     <a href="#">Express Delivery</a>
                 </div>
